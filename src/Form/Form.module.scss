@@ -1,0 +1,24 @@
+@import "src/common_styles/varialbles";
+@import "src/common_styles/mixins";
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 330px;
+    margin: 50px auto 0 auto;
+    &__input {
+        outline: none;
+        padding: 5px 8px;
+        border: 2px solid $mainColor;
+        border-radius: $mainBorderRadius;
+        &:focus {
+            transition: 0.3s;
+            box-shadow: 0 0 10px $formMainColor;
+            border-color: $formMainColor;
+        }
+    }
+    &__add {
+        @include btn-style($formMainColor, $addButtonHoverColor, $mainPaddings, $mainBorderRadius);
+    }
+}

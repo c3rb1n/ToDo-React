@@ -1,0 +1,15 @@
+@import "src/common_styles/varialbles";
+@import "src/common_styles/mixins";
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $taskBgColor;
+    padding: $mainPaddings;
+    border-radius: $mainBorderRadius;
+    margin-bottom: 10px;
+    &__remove {
+        @include btn-style($removeButtonColor, $removeButtonHoverColor, $mainPaddings, $mainBorderRadius);
+    }
+}

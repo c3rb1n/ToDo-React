@@ -1,0 +1,11 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    &__toDo {
+        min-width: 400px;
+        min-height: 400px;
+    }
+}

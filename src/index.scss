@@ -1,0 +1,19 @@
+@import "src/common_styles/varialbles";
+
+body {
+    background-color: #7ecbfa;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font: {
+        family: -apple-system, BlinkMacSystemFont, "Times New Roman", "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+        size: 12px;
+    }
+    margin: 0;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
